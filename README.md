@@ -3,6 +3,7 @@
 ## Migration
 
 **Network Configuration**
+
 Configure blockchain network in the `network` object in `truffle-config.js`, e.g., 
 
 a local network called `development`
