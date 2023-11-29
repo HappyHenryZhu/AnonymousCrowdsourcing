@@ -1,0 +1,372 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "CreditsReceived",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "coin",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mintedCoins",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "serialNo",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[]",
+								"name": "cs",
+								"type": "uint256[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "ca",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "cb",
+										"type": "uint256"
+									},
+									{
+										"internalType": "int256",
+										"name": "f",
+										"type": "int256"
+									},
+									{
+										"internalType": "int256",
+										"name": "za",
+										"type": "int256"
+									},
+									{
+										"internalType": "int256",
+										"name": "zb",
+										"type": "int256"
+									}
+								],
+								"internalType": "struct ZkpZeroOne[]",
+								"name": "zkps",
+								"type": "tuple[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cls",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cas",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cbs",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cds",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct Zkp1N1",
+						"name": "zkp1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "int256[]",
+								"name": "fs",
+								"type": "int256[]"
+							},
+							{
+								"internalType": "int256[]",
+								"name": "zas",
+								"type": "int256[]"
+							},
+							{
+								"internalType": "int256[]",
+								"name": "zbs",
+								"type": "int256[]"
+							},
+							{
+								"internalType": "int256",
+								"name": "zd",
+								"type": "int256"
+							}
+						],
+						"internalType": "struct Zkp1N2",
+						"name": "zkp2",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint8",
+						"name": "nbits",
+						"type": "uint8"
+					}
+				],
+				"name": "spendnRedeem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "serialNo",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[]",
+								"name": "cs",
+								"type": "uint256[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "ca",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "cb",
+										"type": "uint256"
+									},
+									{
+										"internalType": "int256",
+										"name": "f",
+										"type": "int256"
+									},
+									{
+										"internalType": "int256",
+										"name": "za",
+										"type": "int256"
+									},
+									{
+										"internalType": "int256",
+										"name": "zb",
+										"type": "int256"
+									}
+								],
+								"internalType": "struct ZkpZeroOne[]",
+								"name": "zkps",
+								"type": "tuple[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cls",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cas",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cbs",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "cds",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct Zkp1N1",
+						"name": "zkp1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "int256[]",
+								"name": "fs",
+								"type": "int256[]"
+							},
+							{
+								"internalType": "int256[]",
+								"name": "zas",
+								"type": "int256[]"
+							},
+							{
+								"internalType": "int256[]",
+								"name": "zbs",
+								"type": "int256[]"
+							},
+							{
+								"internalType": "int256",
+								"name": "zd",
+								"type": "int256"
+							}
+						],
+						"internalType": "struct Zkp1N2",
+						"name": "zkp2",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint8",
+						"name": "nbits",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newCoin",
+						"type": "uint256"
+					}
+				],
+				"name": "spendnRemint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "spentCoins",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ZeroCoin.sol": "ZeroCoin"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Pedersen.sol": {
+			"keccak256": "0xace4a1259049182af68d31893565ab6d2cc89f7308dd7570e90abcddac1992b9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0a709cddc52731c4d2abe4d142c84adc8d85ab520bb638c2418b36e5135e1b51",
+				"dweb:/ipfs/QmUZu1NfzBX1GCUYgVmtui2TeiQBj2cbwi59vAudLfer3u"
+			]
+		},
+		"contracts/SafeMath.sol": {
+			"keccak256": "0x01f03331b7c3ddf5b221e06fc8e89c1ffcd21bccc5895e2e987e16845bc6054e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://48e54c6c049ed0574cc29f39b9959806bd3160fa1792fee35951544cf6552477",
+				"dweb:/ipfs/QmYu6iNcyHKNiTfcnv366Yaguq4yHdGv1rqcYR3TQ8Sdro"
+			]
+		},
+		"contracts/Utils.sol": {
+			"keccak256": "0xc14828456b7170db66cd2fc5661e0b629e7b8275f8414b20bc00b8bee4400155",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://67622d479bf68e483328b49fd31e84d4cbad0a922bde4ca14207588c7b31ec2b",
+				"dweb:/ipfs/QmQCFEjtAQJLwVdF6rLd77qfu5G7J2z3PqaRmCm4sx3TFH"
+			]
+		},
+		"contracts/ZeroCoin.sol": {
+			"keccak256": "0x701dab0709879d1ddd647a431cb60d78a810ca8e252f9991a1a4e6b152f07018",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bf7b8fce5b7b6e11b2868d6371076515dabafbcab69d93ff3fb1b2fdfc4c6aa1",
+				"dweb:/ipfs/QmNUr5PNrMuH2wmZ356wDkgjpEc7BGXT92LKzPaWECXfZ8"
+			]
+		}
+	},
+	"version": 1
+}
